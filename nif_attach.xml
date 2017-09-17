@@ -1,0 +1,126 @@
+<nif_attach>
+  <!-- Assignment in the engined for all of the basic types -->
+  <basic name="bool">
+    <read type="assign" ver1="4.1.0.1">nif->getInt()</read>
+    <read type="assign" ver1="4.0.0.2">nif->getChar()</read>
+  </basic>
+  <basic name="byte">
+    <read type="assign">nif->getChar()</read>
+  </basic>
+  <basic name="uint">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="ulittle32">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="ushort">
+    <read type="assign">nif->getUShort()</read>
+  </basic>
+  <basic name="int">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="short">
+    <read type="assign">nif->getUShort()</read>
+  </basic>
+  <basic name="BlockTypeIndex">
+    <read type="assign">nif->getUShort()</read>
+  </basic>
+  <basic name="char">
+    <read type="assign">nif->getChar()</read>
+  </basic>
+  <basic name="FileVersion">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="Flags">
+    <read type="assign">nif->getUShort()</read>
+  </basic>
+  <basic name="float">
+    <read type="assign">nif->getFloat()</read>
+  </basic>
+  <basic name="hfloat">
+    <read type="assign">nif->getUShort()</read>
+  </basic>
+  <basic name="HeaderString">
+    <read type="assign">nif->getString()</read>
+  </basic>
+  <basic name="LineString">
+    <read type="assign">nif->getString()</read>
+  </basic>
+  <basic name="Ptr">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="Ref">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="StringOffset">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <basic name="StringIndex">
+    <read type="assign">nif->getInt()</read>
+  </basic>
+  <game name ="Morrowind">
+    <include_object name="Header"/>
+    <include_object name="NiNode"/>
+    <include_object name="NiSwitchNode"/>
+    <include_object name="NiLODNode"/>
+    <include_object name="AvoidNode"/>
+    <include_object name="NiBSParticleNode"/>
+    <include_object name="NiBSAnimationNode"/>
+    <include_object name="NiBillboardNode"/>
+    <include_object name="NiTriShape"/>
+    <include_object name="NiRotatingParticles"/>
+    <include_object name="NiAutoNormalParticles"/>
+    <include_object name="NiCamera"/>
+    <include_object name="RootCollisionNode"/>
+    <include_object name="NiTexturingProperty"/>
+    <include_object name="NiFogProperty"/>
+    <include_object name="NiMaterialProperty"/>
+    <include_object name="NiZBufferProperty"/>
+    <include_object name="NiAlphaProperty"/>
+    <include_object name="NiVertexColorProperty"/>
+    <include_object name="NiShadeProperty"/>
+    <include_object name="NiDitherProperty"/>
+    <include_object name="NiWireframeProperty"/>
+    <include_object name="NiSpecularProperty"/>
+    <include_object name="NiStencilProperty"/>
+    <include_object name="NiVisController"/>
+    <include_object name="NiGeomMorpherController"/>
+    <include_object name="NiKeyframeController"/>
+    <include_object name="NiAlphaController"/>
+    <include_object name="NiUVController"/>
+    <include_object name="NiPathController"/>
+    <include_object name="NiMaterialColorController"/>
+    <include_object name="NiBSPArrayController"/>
+    <include_object name="NiParticleSystemController"/>
+    <include_object name="NiFlipController"/>
+    <include_object name="NiAmbientLight"/>
+    <include_object name="NiDirectionalLight"/>
+    <include_object name="NiPointLight"/>
+    <include_object name="NiSpotLight"/>
+    <include_object name="NiTextureEffect"/>
+    <include_object name="NiVertWeightsExtraData"/>
+    <include_object name="NiTextKeyExtraData"/>
+    <include_object name="NiStringExtraData"/>
+    <include_object name="NiGravity"/>
+    <include_object name="NiPlanarCollider"/>
+    <include_object name="NiSphericalCollider"/>
+    <include_object name="NiParticleGrowFade"/>
+    <include_object name="NiParticleColorModifier"/>
+    <include_object name="NiParticleRotation"/>
+    <include_object name="NiFloatData"/>
+    <include_object name="NiTriShapeData"/>
+    <include_object name="NiVisData"/>
+    <include_object name="NiColorData"/>
+    <include_object name="NiPixelData"/>
+    <include_object name="NiMorphData"/>
+    <include_object name="NiKeyframeData"/>
+    <include_object name="NiSkinData"/>
+    <include_object name="NiUVData"/>
+    <include_object name="NiPosData"/>
+    <include_object name="NiRotatingParticlesData"/>
+    <include_object name="NiAutoNormalParticlesData"/>
+    <include_object name="NiSequenceStreamHelper"/>
+    <include_object name="NiSourceTexture"/>
+    <include_object name="NiSkinInstance"/>
+  </game>
+</nif_attach>
