@@ -253,18 +253,18 @@ for my $objectName(@objectOrder){
         }
       }
     }else{
-      if(defined $add->{arr1}){
-        my $numElements = defined $codeNames{$add->{arr1}} ? $codeNames{$add->{arr1}} : codeName($add->{arr1});
-        print $nifObjectCppFh "  $codeName = new $type" . "[$numElements];\n";
-        print $nifObjectCppFh "  for(int i = 0; i < $numElements; i++){\n";
-        print $nifObjectCppFh "    $codeName" . "[i] = new " . computeType($add) . "();\n";
-        print $nifObjectCppFh "    $codeName" . "[i]->read(nif);\n";
-        print $nifObjectCppFh "  }\n";
-      }else{
-        die "Error: Type undefined for $add->{name} of object: $objectName\n" if !defined computeType($add);
-        print $nifObjectCppFh "  $codeName = new " . computeType($add) . "();\n";
-        print $nifObjectCppFh "  $codeName" . "->read(nif);\n";
-      }
+#      if(defined $add->{arr1}){
+#        my $numElements = defined $codeNames{$add->{arr1}} ? $codeNames{$add->{arr1}} : codeName($add->{arr1});
+#        print $nifObjectCppFh "  $codeName = new $type" . "[$numElements];\n";
+#        print $nifObjectCppFh "  for(int i = 0; i < $numElements; i++){\n";
+#        print $nifObjectCppFh "    $codeName" . "[i] = new " . computeType($add) . "();\n";
+#        print $nifObjectCppFh "    $codeName" . "[i]->read(nif);\n";
+#        print $nifObjectCppFh "  }\n";
+#      }else{
+#        die "Error: Type undefined for $add->{name} of object: $objectName\n" if !defined computeType($add);
+#        print $nifObjectCppFh "  $codeName = new " . computeType($add) . "();\n";
+#        print $nifObjectCppFh "  $codeName" . "->read(nif);\n";
+#      }
     }
   }
   print $nifObjectCppFh  "}\n";
